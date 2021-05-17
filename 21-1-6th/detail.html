@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 게시판 | 상세페이지 </title>
+    <link rel="stylesheet" href="./default.css">
+    <style>
+        #title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 15px auto 10px;
+        }
+
+        #contents {
+            font-size: 18px;
+            margin: 20px auto 15px;
+            border: 1.5px solid black;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        #date-time {
+            text-align: end;
+        }
+
+        #buttons {
+            text-align: center;
+        }
+
+        #update {
+            width: 100px;
+            height: 50px;
+            margin-right: 10px;
+            color: white;
+            background-color: blue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #delete {
+            width: 100px;
+            height: 50px;
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/post"> 글쓰기 </a>
+        <a href="/"> 게시글 목록 </a>
+    </nav>
+
+    <div id="title">
+        --제목--
+    </div>
+
+    <div id = "date-time">
+        작성일:
+        <span id="posted-date-time"> 2021년 5월 17일 딸기스무디 </span>
+    </div>
+
+    <div id = "contents">
+        오늘 참 예쁘다
+    </div>
+
+    <div id = "buttons">
+        <button id = "update"> 수 정 </button>
+        <button id = "delete"> 삭 제 </button>
+    </div>
+</body>
+</html>
