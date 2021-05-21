@@ -6,7 +6,11 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  background-color: burlywood;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 a {
@@ -16,4 +20,25 @@ a {
   color: black;
   font-weight: bold;
   flex-basis: 200px;
+}
+
+.post-list_date {
+  padding-top: 12px;
+  font-size: 14px;
+}
+
+.post-story {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.post_story_title {
+  padding-right: 460px;
+  padding: 10px 370px 2px 12px;
+  font-size: 30px;
+}
+
+.post_story_date {
+  padding-top: 40px;
 }
