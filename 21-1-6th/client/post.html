@@ -11,17 +11,17 @@
             text-align: center;
         }
         
-        #input-title {
+        #input_title {
             display: block;
-            width: 75vw;
+            width: 74vw;
             height: 5vh;
             font-size: 18px;
             margin-bottom: 16px;
         }
 
-        #input-content {
+        #input_content {
             display: block;
-            width: 130vh;
+            width: 135vh;
             min-height: 60vh;
             font-size: 18px;
             border-width: 2px;
@@ -49,12 +49,13 @@
 
     <h1> 게시글을 입력하세요. </h1>
 
-    <form id="">
-        <input id = "input-title" type="text" placeholder="제목을 입력하세요.">
-        <textarea id = "input-content" placeholder="내용을 입력하세요."> </textarea>
+    <form id="form">
+        <input id = "input_title" type="text" placeholder="제목을 입력하세요.">
+        <textarea id = "input_content" placeholder="내용을 입력하세요."> </textarea>
         <button class="submit-btn" type="submit"> 입 력 </button>
     </form>
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="post.js"> </script>
+    <script src="./post.js"> </script>
 </body>
 </html>
