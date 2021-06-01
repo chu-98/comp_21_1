@@ -1,18 +1,12 @@
-const fs = require("fs");
-const express = require("express");
-const path = require("path");
-const mysql = require("mysql");
+const fs = require('fs');
+const express = require('express');
+const path = require('path');
+const mysql = require('mysql');
 
 const app = express();
 
 const databaseInfo = fs.readFileSync('./databaseInfo.json'); //fs는 파일 읽기, 쓰기를 해주는 모듈. 지금은 DB 정보를 읽어오는 목적
 const config = JSON.parse(databaseInfo);                     //전에 배웠던 json을 object로 바꾸는 함수 parse()/ 이걸로 DB 정보를 읽어와서 사용
-
-app.set('port', process.env.PORT || 8080);
-
-app.use(express.static(path.join(__dirname, 'client')));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
 
 //DB 연결
 const connection = mysql.createConnection({
@@ -78,7 +72,7 @@ app.get('/detail-data/:id', (req, res) => {
 //게시글 수정 요청. 수정은 put 메소드!
 app.get('/update/:id', (req, res) => {
     connection.query(
-        `UPDATE COMP.POSTING SET TITLE = "${req.params.id}", CONTENTS = "${req.body.contents}" WHERE id = ${req.params.id}`
+        `UPDATE COMP.POSTING SET TITLE = "${req.params.title}", CONTENTS = "${req.body.contents}" WHERE id = ${req.params.id}`
     );
     res.sendFile(path.join(__dirname, './client/list.html'));
 })
