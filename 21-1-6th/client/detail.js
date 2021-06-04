@@ -1,5 +1,5 @@
 //url로부터 어떤 게시글에 대한 요청인지를 알기위해 게시글 id를 parsing하는 동작 (post.js 것과 동일)
-const path = window.location.pathname;
+const path = window.location.pathname; //==http: localhost:8080과 같은 의미
 const split = path.split("/");
 const id = split[split.length - 1];
 

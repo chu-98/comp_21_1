@@ -26,19 +26,3 @@ a {
   padding-top: 12px;
   font-size: 16px;
 }
-
-.post-story {
-  display: flex;
-  border: 1px solid black;
-  margin-top: 15px;
-}
-
-.post_story_title {
-  padding-right: 460px;
-  padding: 10px 370px 2px 12px;
-  font-size: 30px;
-}
-
-.post_story_date {
-  padding-top: 40px;
-}
