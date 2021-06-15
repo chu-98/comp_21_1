@@ -94,3 +94,4 @@ app.use((err, req, res, next) => {
 app.listen(app.get('port'), () => {
     console.log("Express 서버 실행 중");
 })
+//CS 기초 강의 배열에 대해서 배웠다.
